@@ -6,16 +6,16 @@
     </head>
     <body>
         <header>
-            <h1>PCR</h1>
-            <img src="../recursos/Imagenes/logo.jpg" alt="">
+            <img src="../recursos/Imagenes/logo.jpg" alt="" class="head">
+            <h1 class="head">PCR</h1>
         </header>
         <nav>
             <form action="" method="post">
                 <textarea name="secuencia" id="secuencia" cols="30" rows="10">Secuencia</textarea>
                 <label for="primerfw">Primer Fw</label>
-                <input type="text" name="primerfw" id="primerfw">
+                <input type="text" name="primerfw" id="primerfw" required>
                 <label for="primerrv">Primer Rw</label>
-                <input type="text" name="primerrw" id="primerrv">
+                <input type="text" name="primerrw" id="primerrv" required>
                 <label for="linear">Linear</label>
                 <input type="radio" name="forma" id="linear" value="linear">
                 <label for="circular">Circular</label>

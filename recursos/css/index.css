@@ -8,12 +8,6 @@
 body{
     margin: 0px;
 }
-img{
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    max-height: 25%;
-}
 header{
     background-color: #388c84;
     color: white;
@@ -21,6 +15,15 @@ header{
     padding: 2em 0.5em;
     text-align: center;
     margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+img.head{
+    flex: 0 1 auto;
+    max-height: 100px;
+}
+h1.head{
+    flex: 0 0 auto;
 }
 nav{
     display: flex;
