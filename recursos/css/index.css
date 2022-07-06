@@ -12,7 +12,7 @@ img{
     position: absolute;
     top: 5%;
     left: 10%;
-    height: 25%;
+    max-height: 25%;
 }
 header{
     background-color: #388c84;
