@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "cuerpo";
+    src: url(../fuentes/Finlandica-VariableFont_wght.ttf);
+}
+.result{
+    font-family:'Courier New', Courier, monospace;
+}
+*{
+    font-family: "cuerpo";
+}
+body{
+    margin: 0px;
+}
+img{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 25%;
+}
+header{
+    background-color: #388c84;
+    color: white;
+    font-size: 20px;
+    padding: 2em 0.5em;
+    text-align: center;
+    margin: 0%;
+}
+nav{
+    display: flex;
+    background-color: #3b6ede;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: start;
+}
+label{
+    color: white;
+}

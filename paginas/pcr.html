@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PCR</title>
+        <link href="../recursos/css/paginas.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>PCR</h1>
+            <img src="../recursos/Imagenes/logo.jpg" alt="">
+        </header>
+        <nav>
+            <form action="" method="post">
+                <textarea name="secuencia" id="secuencia" cols="30" rows="10">Secuencia</textarea>
+                <label for="primerfw">Primer Fw</label>
+                <input type="text" name="primerfw" id="primerfw">
+                <label for="primerrv">Primer Rw</label>
+                <input type="text" name="primerrw" id="primerrv">
+                <label for="linear">Linear</label>
+                <input type="radio" name="forma" id="linear" value="linear">
+                <label for="circular">Circular</label>
+                <input type="radio" name="forma" id="circular" value="circular">
+                <label for="numero">Número de tubos</label>
+                <input type="number" name="numero" id="numero">
+                <input type="submit" value="Enviar" id="boton">
+            </form>
+        </nav>
+    </body>
+    <script src="../recursos/scripts/pcr.js"></script>
+</html>
