@@ -33,7 +33,7 @@ form{
     grid-area: 4/3/4/3;
 }
 #boton{
-    grid-area: 5/2/ span 1/span 2;
+    grid-area: 5/2/ span 2/span 1;
 }
 #numero{
     grid-area: 4/4/4/4;
