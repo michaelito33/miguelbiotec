@@ -3,6 +3,7 @@
     <head>
         <title>Alineamiento</title>
         <link href="../recursos/css/paginas.css" rel="stylesheet">
+        <link rel="stylesheet" href="../recursos/css/paginas/alineamiento.css">
     </head>
     <body>
         <header>
@@ -13,11 +14,11 @@
             <form action="" method="post">
                 <textarea name="sec1" id="sec1" cols="30" rows="10" value="AATTGCA" autocapitalize="characters">AATTGCA</textarea>
                 <textarea name="sec2" id="sec2" cols="30" rows="10" value="ATTAG" autocapitalize="characters">ATTAG</textarea>
-                <label for="match">Match score</label>
+                <label for="match" id="et1">Match score</label>
                 <input type="number" name="match" id="match" value="2">
-                <label for="missmatch">Missmatch score</label>
+                <label for="missmatch" id="et2">Missmatch score</label>
                 <input type="number" name="missmatch" id="missmatch" value="-1">
-                <label for="gap">Gap</label>
+                <label for="gap" id="et3">Gap</label>
                 <input type="number" name="gap" id="gap" value="-2">
                 <input type="submit" value="alinear" id="boton">
             </form>

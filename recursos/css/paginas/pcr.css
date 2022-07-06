@@ -1,0 +1,40 @@
+form{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px 5px;
+}
+#secuencia{
+    grid-area: 1/1/span 4/span 1;
+}
+#et1{
+    grid-area: 1/2/1/4;
+}
+#et2{
+    grid-area: 2/2/2/4;
+}
+#primerfw{
+    grid-area: 1/4/1/4;
+}
+#primerrv{
+    grid-area: 2/4/2/4;
+}
+#et3{
+    grid-area: 3/2/3/2;
+}
+#et4{
+    grid-area: 4/2/4/2;
+}
+#linear{
+    grid-area: 3/3/3/3;
+}
+#circular{
+    grid-area: 4/3/4/3;
+}
+#boton{
+    grid-area: 5/2/ span 1/span 2;
+}
+#numero{
+    grid-area: 4/4/4/4;
+}

@@ -21,9 +21,11 @@ header{
 img.head{
     flex: 0 1 auto;
     max-height: 100px;
+    margin: 5px;
 }
 h1.head{
     flex: 0 0 auto;
+    margin: 5px;
 }
 nav{
     display: flex;
@@ -31,6 +33,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
+    align-content: initial;
 }
 .enlace{
     border: white solid;

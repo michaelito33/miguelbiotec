@@ -3,6 +3,7 @@
     <head>
         <title>PCR</title>
         <link href="../recursos/css/paginas.css" rel="stylesheet">
+        <link rel="stylesheet" href="../recursos/css/paginas/pcr.css">
     </head>
     <body>
         <header>
@@ -12,15 +13,15 @@
         <nav>
             <form action="" method="post">
                 <textarea name="secuencia" id="secuencia" cols="30" rows="10">Secuencia</textarea>
-                <label for="primerfw">Primer Fw</label>
+                <label for="primerfw" id="et1">Primer Fw</label>
                 <input type="text" name="primerfw" id="primerfw" required>
-                <label for="primerrv">Primer Rw</label>
+                <label for="primerrv" id="et2">Primer Rw</label>
                 <input type="text" name="primerrw" id="primerrv" required>
-                <label for="linear">Linear</label>
+                <label for="linear" id="et3">Linear</label>
                 <input type="radio" name="forma" id="linear" value="linear">
-                <label for="circular">Circular</label>
+                <label for="circular" id="et4">Circular</label>
                 <input type="radio" name="forma" id="circular" value="circular">
-                <label for="numero">Número de tubos</label>
+                <label for="numero" id="et5">Número de tubos</label>
                 <input type="number" name="numero" id="numero">
                 <input type="submit" value="Enviar" id="boton">
             </form>
