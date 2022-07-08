@@ -3,9 +3,10 @@ function pcr(){
     let molde = document.getElementById("secuencia").value;
     let forward = document.getElementById("primerfw").value;
     let reversem =  document.getElementById("primerrv").value;
-    let circular = document.getElementById("circular").value;
+    let circular = document.getElementById("circular").checked;
     let numero = document.getElementById("numero").value;
-    const susituciones = {"A":"T","T":"A","G":"C","C":"G"};
+    if (forward && reversem){
+        const susituciones = {"A":"T","T":"A","G":"C","C":"G"};
     function upper(cadena){
         let resultado = "";
         const may = {"A":"A","T":"T","G":"G","C":"C","a":"A","t":"T","g":"G","c":"C","\n":""};
@@ -40,7 +41,22 @@ function pcr(){
     for (let ini of fw){
         for (let fin of rv){
             if(ini<fin){
-                productos.push(molde.substring(ini,fin));
+                let bien = true;
+                for (let init of fw){
+                    if (init<fin && init>ini){
+                        bien = false;
+                        break
+                    }
+                }
+                for (let finit of rv){
+                    if (finit<fin && finit>ini){
+                        bien = false;
+                        break
+                    }
+                }
+                if(bien){
+                    productos.push(molde.substring(ini,fin));
+                }
             }
         }
     }
@@ -95,7 +111,7 @@ function pcr(){
         <table style="border: solid;">
             <tr>
                 <td>Componente</td>
-                <td>Cantudad ul</td>
+                <td>Cantidad ul</td>
             </tr>
             <tr>
                 <td>H20</td>
@@ -124,5 +140,6 @@ function pcr(){
         </table>
     </div>
 </div>`)
+    }
 }
 boton.addEventListener("click",pcr);

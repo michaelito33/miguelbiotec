@@ -70,9 +70,9 @@ function alinear(){
     <header>
         <h1 style="margin-left: 2px;">Alineamiento</h1>
     </header style="background-color:white; padding:5px;">
-    <div style="background-color: white;padding: 5px;line-height: 2px;">
-        <p style="font-family:'Courier New', Courier, monospace">${sec1}</p>
-        <p style="font-family: 'Courier New', Courier, monospace;">${sec2}</p>
+    <div style="background-color: white;padding: 5px;word-wrap:break-word">
+        <p style="font-family:'Courier New', Courier, monospace;">${sec1}</p>
+        <p style="font-family:'Courier New', Courier, monospace;">${sec2}</p>
     </div>
 </div>`);
 }
